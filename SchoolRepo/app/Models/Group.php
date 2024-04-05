@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,4 +15,5 @@ class Group extends Model
         return $this->hasMany(Student::class);
     }
     use HasFactory;
+    use HasUuids;
 }
